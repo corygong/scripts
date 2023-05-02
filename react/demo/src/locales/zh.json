@@ -1,0 +1,26 @@
+{
+    "navItems": {
+      "home": "首页",
+      "about": "关于",
+      "contact": "联系我们",
+      "home1": "首页",
+      "about1": "关于",
+      "contact1": "联系我们",
+      "home2": "首页",
+      "about2": "关于",
+      "contact2": "联系我们"
+    },
+    "home": {
+      "page1Detail": "揭开塑造我们这个世界背后的那些故事",
+      "page1Button": "开始探索",
+      "page2Detail": "\"前年之后，即使是你也可能价值连城\"",
+      "moreDetails": "查看更多",
+      "page3Detail": "从衣食住行， 看人类文明点点滴滴的进化历程。",
+      "page3Block1": "出行工具的历史",
+      "page3Block2": "服饰的历史",
+      "page3Block3": "饮食起居的历史",
+      "page4Detail": "国际关系中的波谲云诡..."
+
+    }
+  }
+  

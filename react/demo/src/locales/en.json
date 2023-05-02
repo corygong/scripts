@@ -1,0 +1,24 @@
+{
+    "navItems": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact",
+      "home1": "Home",
+      "about1": "About",
+      "contact1": "Contact",
+      "home2": "Home",
+      "about2": "About",
+      "contact2": "Contact"
+    },   
+    "home": {
+        "page1Detail": "Uncover the hidden stories and facinating connections that shaped our world",
+        "page1Button": "start",
+        "page2Detail": "\"In a thousand years, even you maybe worth something.\"",
+        "moreDetails": "More Details",
+        "page3Detail": "Exploring the development of food, shelter, clothing and transportation across time.",
+        "page3Block1": "Model of Transports",
+        "page3Block2": "Clothing and Fashions",
+        "page3Block3": "Food and Shelters",
+        "page4Detail": "The intricate art of international relations throughout the ages"
+    }
+}

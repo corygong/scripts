@@ -2,6 +2,7 @@ body {
     background-color: transparent;
     font-family: "Comfortaa", sans-serif;
     position: relative;
+    text-transform: none;
   }
  
   /* footer {
@@ -38,7 +39,7 @@ body {
  
   .main-content {
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     scroll-snap-type: y mandatory;
     position: relative;
     height: 100vh;
@@ -77,16 +78,16 @@ body {
     opacity: 0;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   }
-  .concept:hover:before {
+  /* .concept:hover:before {
     opacity: 0.5;
-  }
+  } */
  
   .concept-one {
-    display: grid;
-    grid: repeat(3, 1fr)/repeat(3, 1fr);
+    /* display: grid; */
+    /* grid: repeat(3, 1fr)/repeat(3, 1fr); */
     background: transparent;
-    padding: 8em;
-    background: url("assets/coverPage_blank.png") no-repeat center center/cover;
+    /* padding: 8em; */
+    background: url("../assets/coverPage_blank.png") no-repeat center center/cover;
   }
 
   /* .concept-one h1 {
@@ -132,36 +133,41 @@ body {
     margin-top: -50px;
   } */
 
-  .concept-one .detail-one-img {
+  .concept-one .detail-one-title {
+    word-wrap: break-word;
+    max-width: 471px;
     position: absolute;
-    top: 24%;
-    left: 53%;
-    transform: translate(-50%, -50%) scale(0.8,0.8)
+    top: 7%;
+    left: 39%;
+    font-size: 50px;
+    font-weight: bold;
   }
-  .concept-one .detail-one-p {
+  .concept-one .detail-one-detail {
     word-wrap: break-word;
     max-width: 400px;
     position: absolute;
     top: 40%;
     left: 39%;
+
   }
   .concept-one .detail-one-btn {
     width: 106px;
     position: absolute;
-    top: 59%;
+    top: 59.6%;
     left: 47.3%;
 
     border-radius: 80px;
     border-color: rgba(96, 83, 67, 0.2);
 
     color:black;
+
   }
  
   .concept-two {
     display: grid;
     grid: 100%/repeat(6, 1fr);
     padding: 5em 15em;
-    background: url("assets/coverPage_art_blank.png") center center/cover;
+    background: url("../assets/coverPage_art_blank.png") center center/cover;
   }
   .concept-two .hover {
     position: relative;
@@ -183,13 +189,15 @@ body {
   }
 
 
-  .concept-two .detail-two-img {
+  .concept-two .detail-two-title {
+    word-wrap: break-word;
+    max-width: 400px;
     position: absolute;
-    top: 74%;
-    left: 53%;
-    transform: translate(-50%, -50%) scale(0.8,0.8);
+    top: 15%;
+    left: 39%;
+    font-size: 50px;
   }
-  .concept-two .detail-two-p {
+  .concept-two .detail-two-detail {
     word-wrap: break-word;
     max-width: 400px;
     position: absolute;
@@ -209,16 +217,18 @@ body {
  
   .concept-three {
     padding: 5em;
-    background: url("assets/coverPage_essentialLife_blank.png") center center/cover;
+    background: url("../assets/coverPage_essentialLife_blank.png") center center/cover;
   }
 
-  .concept-three .detail-three-img {
+  .concept-three .detail-three-title {
+    word-wrap: break-word;
+    max-width: 400px;
     position: absolute;
-    top: 26%;
-    left: 21%;
-    transform: translate(-50%, -50%) scale(0.8,0.8);
+    top: 15%;
+    left: 39%;
+    font-size: 50px;
   }
-  .concept-three .detail-three-p {
+  .concept-three .detail-three-detail {
     word-wrap: break-word;
     max-width: 400px;
     position: absolute;
@@ -293,17 +303,20 @@ body {
     align-items: center;
     justify-content: center;
     /* letter-spacing: 2em; */
-    background: url("assets/coverPage_ir_blank.png") no-repeat center center/cover;
+    background: url("../assets/coverPage_ir_blank.png") no-repeat center center/cover;
   }
 
 
-  .concept-four .detail-four-img {
+  .concept-four .detail-four-title {
+    word-wrap: break-word;
+    max-width: 250px;
+    text-align: left;
     position: absolute;
-    top: 45%;
-    left: 82%;
-    transform: translate(-50%, -50%) scale(0.5,0.5);
+    top: 15%;
+    left: 39%;
+    font-size: 50px;
   }
-  .concept-four .detail-four-p {
+  .concept-four .detail-four-detail {
     word-wrap: break-word;
     max-width: 250px;
     text-align: left;
@@ -314,12 +327,14 @@ body {
   .concept-four .detail-four-btn {
     width: 144px;
     position: absolute;
-    top: 77.5%;
+    top: 79.5%;
     left: 81.1%;
     border-radius: 20px;
     border-color: rgb(207, 167, 129);
     color:white;
     background-color: rgb(207, 167, 129);
+    text-transform: none;
+    font-size: 17px;
   }
 
 
@@ -333,9 +348,28 @@ body {
   }
  
   .concept-five {
-    background: url("assets/coverPage_map_blank.png") center center/cover;
+    background: url("../assets/coverPage_map_blank.png") center center/cover;
     display: flex;
     align-items: center;
+  }
+
+  .concept-five .detail-five-title {
+    position: absolute;
+    top: 15%;
+    left: 39%;
+    font-size: 50px;
+    word-wrap: break-word;
+    max-width: 250px;
+    text-align: left;
+
+  }
+  .concept-five .detail-five-detail {
+    word-wrap: break-word;
+    max-width: 250px;
+    text-align: left;
+    position: absolute;
+    top: 14%;
+    left: 57%;
   }
   .concept-five .word {
     width: 600px;
@@ -362,8 +396,41 @@ body {
   .concept-six {
     display: flex;
     align-items: center;
-    background: url("assets/coverPage_noble_blank.png") top right/cover;
+    background: url("../assets/coverPage_noble_blank.png") top right/cover;
   }
+
+  .concept-six .detail-six-title {
+    position: absolute;
+    top: 15%;
+    left: 39%;
+    font-size: 50px;
+    word-wrap: break-word;
+    max-width: 250px;
+    text-align: left;
+  }
+  .concept-six .detail-six-detail {
+    word-wrap: break-word;
+    max-width: 250px;
+    text-align: left;
+    position: absolute;
+    top: 57%;
+    left: 10%;
+  }
+  .concept-six .detail-six-btn {
+    width: 276px;
+    height: 61px;
+    position: absolute;
+    top: 81.5%;
+    left: 4%;
+    border-radius: 30px;
+    border-color: black;
+    color:white;
+    background-color: black;
+    font-size: 26px;
+    text-transform: none;
+  }
+
+
   .concept-six .word {
     width: 550px;
     margin: auto;
@@ -399,10 +466,42 @@ body {
   }
  
   .concept-seven {
-    background: url("assets/coverPage_science_blank.png") top center/cover;
+    background: url("../assets/coverPage_science_blank.png") top center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .concept-seven .detail-seven-title {
+    position: absolute;
+    top: 15%;
+    left: 39%;
+    font-size: 50px;
+    word-wrap: break-word;
+    max-width: 250px;
+    text-align: left;
+
+  }
+  .concept-seven .detail-seven-detail {
+    word-wrap: break-word;
+    max-width: 250px;
+    text-align: left;
+    position: absolute;
+    top: 46%;
+    left: 80%;
+  }
+  .concept-seven .detail-seven-btn {
+    width: 252px;
+    height: 61px;
+    position: absolute;
+    top: 69.5%;
+    left: 79.5%;
+    border-radius: 30px;
+    font-size: 26px;
+    border-color: rgb(242, 156, 56);
+    color:white;
+    background-color: rgb(242, 156, 56);
+    text-transform: none;
   }
   .concept-seven h1 {
     letter-spacing: 35px;
@@ -439,10 +538,44 @@ body {
     }
   }
   .concept-eight {
-    background: url("assets/coverPage_blank.png") center center/cover;
+    background: url("../assets/coverPage_unsungHeroes_blank.png") center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+
+  .concept-eight .detail-eight-title {
+    max-width: 250px;
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 19%;
+    font-size: 50px;
+  }
+
+
+  .concept-eight .detail-eight-detail {
+    max-width: 250px;
+    text-align: left;
+    position: absolute;
+    top: 26%;
+    left: 20%;
+  }
+
+  .concept-eight .detail-eight-btn {
+    width: 212px;
+    height: 62px;
+    position: absolute;
+    top: 52.3%;
+    left: 8%;
+    color: #fff;
+    font-size: 26px;
+    border-radius: 80px;
+    border-color: rgb(19,30,51);
+    background-color: rgb(19,30,51);
+    text-transform: none;
+
   }
   .concept-eight .word {
     display: flex;
@@ -487,3 +620,91 @@ body {
       top: 100px;
     }
   }
+
+
+
+  .concept-nine {
+    background: url("../assets/coverPage_writings_blank.png") center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .concept-nine .detail-nine-title {
+    max-width: 250px;
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    left: 39%;
+    font-size: 40px;
+  }
+
+
+  .concept-nine .detail-nine-detail {
+    max-width: 250px;
+    text-align: left;
+    position: absolute;
+    top: 26%;
+    left: 20%;
+  }
+
+  .concept-nine .detail-nine-btn {
+    width: 272px;
+    height: 52px;
+    position: absolute;
+    top: 51%;
+    left: 4.2%;
+    color: #fff;
+    font-size: 26px;
+    border-radius: 80px;
+    border-color: rgb(77,44,86);
+    background-color: rgb(77,44,86);
+    text-transform: none;
+  }
+
+
+  .concept-ten {
+    background: url("../assets/coverPage_war_blank.png") center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .concept-ten .detail-ten-title {
+    max-width: 250px;
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    left: 39%;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+
+  .concept-ten .detail-ten-detail {
+    max-width: 250px;
+    text-align: left;
+    position: absolute;
+    top: 26%;
+    left: 20%;
+    /* transform: scale(5.8);
+    transform-origin: center center; */
+  }
+
+
+  .concept-ten .detail-ten-btn {
+    width: 272px;
+    height: 69px;
+    position: absolute;
+    top: 63.6%;
+    left: 76.5%;
+    color: #fff;
+    font-size: 26px;
+    border-radius: 80px;
+    border-color: rgb(188,156,101);
+    background-color: rgb(188,156,101);
+    text-transform: none;
+  }
+

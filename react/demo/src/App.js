@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './Home';
+import Home from './pages/Home';
+import SearchPage from './pages/SearchPage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
@@ -28,7 +30,12 @@ i18n
 function App() {
   return (
     <div className="App">
-      <Home></Home>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route path="/search" element={<SearchPage/>} />
+      </Routes>
+    </Router>
     </div>
   );
 }

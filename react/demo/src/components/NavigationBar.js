@@ -30,8 +30,12 @@ const NavigationBar = (props) => {
 
   const navItems = [
     { id: "home", label: t("navItems.home") },
-    { id: "about", label: t("navItems.about") },
-    { id: "contact", label: t("navItems.contact") },
+    { id: "nav1", label: t("navItems.nav1") },
+    { id: "nav2", label: t("navItems.nav2") },
+    { id: "nav3", label: t("navItems.nav3") },
+    { id: "nav4", label: t("navItems.nav4") },
+    { id: "nav5", label: t("navItems.nav5") },
+    { id: "nav6", label: t("navItems.nav6") },
   ];
 
   // const [currLang, setCurrLang] = React.useState(i18n.language);
@@ -49,14 +53,6 @@ const NavigationBar = (props) => {
       <Divider />
       <List>
 
-
-        {/* {navItems.map((item) => (
-          <ListItem key={item.id} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item.label} />
-            </ListItemButton>
-          </ListItem>
-        ))} */}
         {navItems.map((item) => (
           <Button key={item.id} sx={{ color: "#fff" }}>
             {item.label}
@@ -73,7 +69,7 @@ const NavigationBar = (props) => {
   //   setCurrLang(val);
   // }
   const currentLanguage = i18n.language;
-  console.log(currentLanguage);
+  // console.log(currentLanguage);
 
 
   const logoSrc = currentLanguage === "en" ? logo_en : logo_zh;

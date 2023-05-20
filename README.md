@@ -31,3 +31,9 @@ pip install google-ads
 pip install google-api-python-client
 
 ```
+
+### Excel
+
+```bash
+pip install openpyxl
+```

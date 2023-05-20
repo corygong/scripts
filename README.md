@@ -13,7 +13,7 @@ pip install pillow PyPDF2
 ### Google sheet
 
 ```bash
-pip install gspread oauth2client
+pip install --upgrade gspread google-auth google-auth-oauthlib google-auth-httplib2
 
 ```
 

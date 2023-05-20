@@ -17,6 +17,14 @@ pip install gspread oauth2client
 
 ```
 
+### Google Ads
+
+```bash
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+pip install google-ads
+
+```
+
 ### GTM
 
 ```bash
